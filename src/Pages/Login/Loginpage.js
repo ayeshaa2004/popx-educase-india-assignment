@@ -31,7 +31,15 @@ function Loginpage() {
       localStorage.setItem("user", JSON.stringify(userData));
       navigate("/profile");
     } catch (error) {
-      alert(error.message);
+      if (
+        error.code === "auth/invalid-credential" ||
+        error.code === "auth/wrong-password" ||
+        error.code === "auth/user-not-found"
+      ) {
+        alert("Incorrect email or password.");
+      } else {
+        alert("Login failed. Please try again.");
+      }
     }
   };
 

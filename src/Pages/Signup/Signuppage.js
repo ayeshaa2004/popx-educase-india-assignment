@@ -59,7 +59,13 @@ function Signuppage() {
       localStorage.setItem("user", JSON.stringify(userData));
       navigate("/profile");
     } catch (error) {
-      alert(error.message);
+      if (error.code === "auth/email-already-in-use") {
+        alert("This email is already registered.Please log in");
+      } else if (error.code === "auth/weak-password") {
+        alert("Password should be at least 6 characters.");
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
     }
   };
 
