@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.signup-page {
+  border: none;
+  background-color: rgb(248, 246, 246);
+  margin: 22px;
+  padding: 12px 22px;
+  font-family: "Inter", sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.signup-head {
+  margin-top: 32px;
+  text-align: left;
+}
+.signup-heading {
+  font-size: 26px;
+  font-weight: 700;
+}
+.each-input {
+  margin-bottom: 30px;
+  position: relative;
+}
+.inputfield {
+  border: 1px solid lightgray;
+  outline: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  width: 100%;
+  background-color: rgb(248, 246, 246);
+}
+.fieldcolor {
+  border: 1px solid red;
+  outline: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  width: 100%;
+  background-color: rgb(248, 246, 246);
+}
+
+.inputfield:focus {
+  border: 1.5px solid #000;
+  outline: none;
+}
+.labelstyle {
+  color: rgb(100, 15, 219);
+  font-size: 14px;
+  position: absolute;
+  left: 12px;
+  top: -8px;
+  background-color: rgb(248, 246, 246);
+}
+.createacc-btn {
+  margin-top: auto;
+}
+.radio-para {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.radios {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 14px;
+}
+.each-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.each-radio input[type="radio"] {
+  transform: scale(1.3);
+  accent-color: rgb(100, 15, 219);
+}
+.radio-class {
+  font-size: large;
+}
+.error-para {
+  color: red;
+  font-size: 11px;
+  text-align: left;
+  margin-top: 2px;
+}
