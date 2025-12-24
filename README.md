@@ -19,6 +19,7 @@ A responsive React application with Firebase Authentication for Signup, Login, a
 - *Version Control:* Git & GitHub
 
 ## Folder Structure
+```text
 src/
 ├── Pages/
 │   ├── Login/
@@ -29,7 +30,7 @@ src/
 ├── services/
 ├── App.js
 └── index.js
-
+```
 
 ```bash
 git clone https://github.com/ayeshaa2004/popx-educase-india-assignment.git
@@ -46,4 +47,4 @@ Author
 Ayesha Aziz
 
 GitHub
-Email: ayeshaa2004@gmail.com
+Email: ayeshaaziz563@gmail.com
